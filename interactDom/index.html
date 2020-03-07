@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+
+        <h1 v-once>{{ title }}</h1>
+        <!-- v-once lets you keep the initial value and not have it altered down the line -->
+        <p>{{ sayHello() }} - <a v-bind:href="link">Udemy</a></p>
+        <!-- a directive is something like //v-bind:href// which tells vue to bind something to the data
+        to do this you give it an argument and in this case that is the "link" which is in the data of the app.js -->
+        <hr>
+        <p v-html="finishedLink"></p>
+
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
