@@ -13,7 +13,9 @@
     <div id="events">
 
         <button v-on:click="increase">Click me</button>
-        <p>{{counter}}</p>
+        <button v-on:click="counter--">Click me</button>
+        <p>{{counter * 5}}</p>
+        <p>{{counter * 5 > 25 ? 'greater than 25' : 'smaller than 25'}}</p>
 
         <button v-on:click="increaseArg(2, $event)">Click me</button>
         <p>{{doubles}}</p>
