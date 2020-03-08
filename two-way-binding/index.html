@@ -12,8 +12,11 @@
     <div id="two-way-binding">
         <button v-on:click="counter++">Increase</button>
         <button v-on:click="counter--">Decrease</button>
-        <p>Counter: {{counter}}</p>
-        <p>Result: {{result}}</p>
+        <button @click="secondCounter++">Increase Second</button>
+        <!-- @click is the same as v-on:click just shortened -->
+
+        <p>Counter: {{ counter }} | {{ secondCounter }}</p>
+        <p>Result: {{ result() }} | {{ output }}</p>
 
     </div>
 
