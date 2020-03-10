@@ -33,6 +33,7 @@ new Vue({
   startProgress: function() {
     let vm = this;
     let width = 0;
+  
     setInterval(function(){
       width = width += 10;
       vm.progressBar.width = width + 'px';
