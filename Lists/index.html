@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rendering Lists</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <ul>
+            <li v-for="(ingredient, i) in ingredients">{{ ingredient }} ( {{ i }} )</li>
+        </ul>
+        <template v-for="(ingredient, index) in ingredients" key:="ingredient">
+            <h4>{{ ingredient }}</h1>
+            <p>{{ index }}</p>
+        </template>
+        <hr>
+        <ul>
+            <li v-for="person in persons">
+                <div v-for="(value, key, index) in person">{{ key }}: {{ value }} ({{ index }})</div>
+            </li>
+        </ul>
+        <hr>
+        <span v-for="n in 50">{{ n }}</span>
+        <hr>
+        <button @click="ingredients.push('spices')">addNew</button>
+
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
