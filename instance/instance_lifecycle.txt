@@ -1,0 +1,37 @@
+new Vue
+    |
+    |
+    \/
+beforeCreate()
+    |
+    |
+    \/
+initalise data and events
+    |
+    |
+    \/
+instance created //// created() called
+    |
+    |                                                       Data changed
+    \/                                                          beforeUpdate()
+compiles template or el's template                                  ReRender DOM
+    |                                                                   updated()
+    |                                                                       mounted to DOM
+    \/
+ beforeMount()
+    |
+    |
+    \/
+replace el with compiled template
+    |
+    |
+    \/
+mounted to DOM
+    |
+    |
+    \/
+beforeDestroy()
+    |
+    |
+    \/
+DESTROYED
