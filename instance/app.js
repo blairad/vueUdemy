@@ -3,25 +3,25 @@ new Vue ({
     data: {
         title: "The VueJS Instance"
     },
-    beforeCreated: function(){
+    beforeCreate: function(){
         console.log('beforeCreated()')
     },
     created: function(){
         console.log('created()')
     },
-    beforeMounted: function() {
+    beforeMount: function() {
         console.log('beforeMounted()')
     },
     mounted: function() {
         console.log('Mounted()')
     },
-    beforeUpdated: function() {
+    beforeUpdat: function() {
         console.log('beforeUpdated()')
     },
     updated: function() {
         console.log('updated()')
     },
-    beforeDestroyed: function() {
+    beforeDestroy: function() {
         console.log('beforeDestroyed()')
     },
     destroyed: function(){
@@ -33,3 +33,4 @@ new Vue ({
         }
     }
 })
+
